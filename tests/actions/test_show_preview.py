@@ -19,7 +19,6 @@ def test_show_preview(capsys):
     result = capsys.readouterr()
     assert result.out == (
         "Found 3 files and 2 directories\n"
-        "First 5 files: ['src/__init__.py',"
-        " 'src/app.py', 'src/utils/__init__.py']\n"
-        "First 5 directories: ['src', 'src/utils']\n"
+        "Files: ['src/__init__.py', 'src/app.py', 'src/utils/__init__.py']\n"
+        "Directories: ['src', 'src/utils']\n"
     )
