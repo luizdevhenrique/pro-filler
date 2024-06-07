@@ -42,6 +42,8 @@ def file_without_extension():
         file.write("")
     yield file_path
 
+    os.remove(file_path)
+
 
 def test_show_details_without_extension(capsys, file_without_extension):
     context = {
