@@ -25,7 +25,7 @@ def test_show_details_timestamp(capsys):
       os.path.getmtime(context['base_path'])).strftime('%Y-%m-%d')
     result_out = (
       f"File name: entry_points.txt\n"
-      f"File size in bytes: 58\n"
+      f"File size in bytes: 59\n"
       f"File type: file\n"
       f"File extension: .txt\n"
       f"Last modified date: {last_modified_date}\n"
