@@ -24,4 +24,4 @@ def test_show_disk_usage(create_files, capsys):
     assert "Total size: 60" in lines[-2]
 
     for line in lines[:-2]:
-        assert "(33%)" in line
+        assert "(33.33%)" in line
